@@ -14,6 +14,9 @@ class SimpleEither<L, R> implements Either<L, R> {
         return this.rightValue;
     }
 }
+
+// new 연산자를 통하여 생성자를 호출해서 객체를 만듬
+
 const either = new SimpleEither(4, 5);
 either.left(); // 4
 either.right(); //5

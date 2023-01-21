@@ -1,3 +1,5 @@
+//constrain 억압하다 타입을 제한시키다.
+
 interface Employee {
     pay(): void;
 }
@@ -27,6 +29,8 @@ function pay<T extends Employee>(employee: T): T {
     employee.pay();
     return employee;
 }
+
+new Array
 
 // new 연산자를 통하여 생성자를 호출해서 객체를 만듬
 const ellie = new FullTimeEmployee();
